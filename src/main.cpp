@@ -31,15 +31,15 @@ const enum window_type window_type = GAUSSIAN;      // shape of CQT kernels
 // End-user constants, adjust depending on your electrical configuration
 const int dB_min = 13;                              // dB, minimum value to display
 const int dB_max = 50;                              // dB, maximum value to display
-const float fft_mag_cutoff = 70.0;                  // factor used for cutting off noise in raw spectrum, raise if noise is in the output
+const float fft_mag_cutoff = 80.0;                  // factor used for cutting off noise in raw spectrum, raise if noise is in the output
 const int screen_width = 256;                       // px, width of screen
 const int screen_height = 64;                       // px, height of screen
 
 // Critical constants, not intended for end-user modification
 const int N_samples = 5000;                         // FFT length, prime factorication should contain as many 2s as possible, affects performance
-const int sampling_frequency = 44100;               // Hz, I2S sampling frequency
-const int max_freq = 6000;                          // Hz, last CQT center freq to display, ensure CQT kernels aren't degenerated when changing
-const int min_freq = 38;                            // Hz, first CQT center freq to display, ensure CQT kernels aren't degenerated when changing
+const int sampling_frequency = 45000;               // Hz, I2S sampling frequency
+const int max_freq = 5500;                          // Hz, last CQT center freq to display, ensure CQT kernels aren't degenerated when changing
+const int min_freq =30;                            // Hz, first CQT center freq to display, ensure CQT kernels aren't degenerated when changing
 
 const float min_val = 0.08;                         // see Brown CQT paper for explanation
 const int calc_rate = 120;                          // Hz, calcs pinned to this rate, artifacts on tone tests and fails to meet calc_rate if too high
@@ -47,7 +47,7 @@ const int calc_rate = 120;                          // Hz, calcs pinned to this 
 const int bar_count_default = 64;
 int bar_count = bar_count_default;                  // number of columns to display 16X15, 32x7, 42X5, 64x3
 int bar_width = 3;                                  // px, width of each column
-const int bar_refresh_rate = 500;
+const int bar_refresh_rate = 90;
 const int peak_hold_delay = 90;                     // Peak hold time lesser holds longer 
 const int peak_gap = 2;                             // Gap between in Peak and Bar (px)
 
