@@ -27,7 +27,7 @@ An **ESP32 64-Band Audio Spectrum Analyzer** is a compact, powerful project that
 - Schematics
 - PCB Gerber Files
 - Can be further tweaked for more advanced features
-## Demo
+## Demo 
 
-[https://www.instagram.com/opensourcethings_/](https://www.instagram.com/p/DE-RaQLt1cP/)
+[https://www.instagram.com/opensourcethings_o/](https://www.instagram.com/p/DE-RaQLt1cP/)
 
